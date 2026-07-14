@@ -35,4 +35,4 @@
 
 ## 內容與權利
 
-範本與「霧渡口」範例採 MIT 授權。你加入的規則書、世界設定和玩家內容仍受其原始權利條件約束；只放入你有權使用的內容。詳見 `protocol/DATA-SCHEMA.md`、`protocol/RAG-PROTOCOL.md` 與 `protocol/VOICE-PROTOCOL.md`。
+範本與「霧渡口」範例採 MIT 授權。你加入的規則書、世界設定和玩家內容仍受其原始權利條件約束；只放入你有權使用的內容。要放入自己的規則書（含 PDF）或其他素材，請先讀 [ADDING-RULEBOOKS.md](ADDING-RULEBOOKS.md)：位置、Markdown 轉換建議、優先序宣告與權利注意事項都在裡面。詳見 `protocol/DATA-SCHEMA.md`、`protocol/RAG-PROTOCOL.md` 與 `protocol/VOICE-PROTOCOL.md`。

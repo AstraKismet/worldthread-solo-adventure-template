@@ -50,7 +50,7 @@ if ($manifest.name -ne $expectedName) {
 }
 
 @(
-    'README.md', 'LICENSE', 'template.json',
+    'README.md', 'LICENSE', 'template.json', 'ADDING-RULEBOOKS.md',
     'protocol/PLAYBOOK.md', 'protocol/DATA-SCHEMA.md',
     'protocol/RAG-PROTOCOL.md', 'protocol/VOICE-PROTOCOL.md',
     'protocol/adapters/FILE-WORKSPACE.md',
