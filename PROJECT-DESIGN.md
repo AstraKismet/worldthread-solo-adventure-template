@@ -23,6 +23,8 @@ dist/worldthread-solo-adventure-template/
 │  ├─ RAG-PROTOCOL.md
 │  ├─ VOICE-PROTOCOL.md
 │  └─ adapters/
+├─ tools/
+│  └─ dice.mjs
 ├─ game/
 │  ├─ reference/{rules,setting,scenarios,characters}/
 │  ├─ private/director/{fronts}/
