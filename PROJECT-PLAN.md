@@ -37,7 +37,7 @@
 - [x] 以 `template.json` 為單一版本來源，採 SemVer；`0.x` 為預穩定階段（CI 驗證 SemVer 與名稱一致性）。
 - [x] Pull Request 與 `main` CI 檢查結構、版本、連結、範例、封裝與機密排除。
 - [x] `vX.Y.Z` tag CD 驗證版本一致、封裝 `dist/`、產生 SHA-256 並發布 GitHub Release（2026-07-14 `v0.1.0` 首次 tag 觸發實測成功；同日 `v0.2.0` 再次驗證，Release 均含 ZIP 與 `.sha256` 資產）。
-- [ ] 在 GitHub 對 `main` 啟用 Pull Request 與 CI 成功的分支保護（2026-07-16 查驗：PR／禁刪除／禁 force push 已生效，尚缺 CI required status checks——補完項見〈階段 5〉末條，完成後兩處一併勾銷）。
+- [x] 在 GitHub 對 `main` 啟用 Pull Request 與 CI 成功的分支保護（2026-07-16 完成：ruleset「GitHub Flow main protect」——必走 PR、禁刪除、禁 force push、required status checks「Verify distributable package」（strict）、必要核准審查 0、無 bypass；經 API 查驗生效）。
 
 具體 GitHub Flow、SemVer、Actions 設定和發行操作保留在不追蹤的 `GITHUB_REMOTE_SETUP.local.md`，避免本計畫與操作手冊重複。
 
@@ -51,7 +51,7 @@
 - [x] 存檔可見性：回合末一行極簡 OOC 存檔確認（`✦ 進度已存`），與資源選項提示同列「不受雜訊層級管制」的兩項 OOC；README／session-brief 明示「看到即可安全關閉對話」。
 - [x] 資源機制提醒：擲骰／關鍵判定前，玩家有可影響結果的規則資源時一行 OOC 提示選項與代價，不得代玩家決定（PLAYBOOK §每回合第 2 步）。
 - [x] 單人調整：PLAYBOOK 新增 §單人調整（遭遇規模、資源恢復、失敗後果、可選夥伴 NPC，調整記 `ruling`）；`convert-rulebook-prompt.md` 加創角／判定／資源機制章節必轉與「單人化注意」標記；ADDING-RULEBOOKS 同步。
-- [ ] `main` 分支保護補完：ruleset 已有禁刪除、禁 force push、必走 PR；補 required status checks（CI job「Verify distributable package」）並將必要核准審查數 1→0（單人 repo 無法自核 PR，實質門祛為 CI 綠燈）（2026-07-16 定案）。
+- [x] `main` 分支保護補完：ruleset 已有禁刪除、禁 force push、必走 PR；補 required status checks（CI job「Verify distributable package」，strict）並將必要核准審查數 1→0（單人 repo 無法自核 PR，實質門祛為 CI 綠燈）（2026-07-16 定案並完成，API 查驗生效）。
 
 ## 主要風險與處置
 
